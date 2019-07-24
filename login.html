@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        width: 502px;
+        height: 636px;
+        border: 1px solid;
+        position: absolute;
+        left: 35%;
+
+    }
+
+    .change {
+        width: 340px;
+        height: 75px;
+        margin: 0 auto;
+        line-height: 70px;
+    }
+
+    .change a {
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+        padding: 0 28px;
+
+    }
+
+
+
+    .change span {
+        color: #cccccc;
+        font-size: 21px;
+    }
+
+    .tuo {
+        height: 30px;
+        background: #a51b1b;
+    }
+
+    .zhuti {
+        width: 330px;
+        height: 523px;
+        margin: 0 auto;
+    }
+
+    .put {
+        width: 330px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid;
+        height: 46px;
+        background: white;
+        box-shadow: 0 0 0px 1000px #fff inset;
+    }
+
+    .login {
+        background: #a51b1b;
+        width: 320px;
+        height: 43px;
+        text-align: center;
+        line-height: 43px;
+        border: 0px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        color: white;
+        font-size: 16px;
+        margin-bottom: 20px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .more {
+        float: right;
+        color: #007dff;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .fontone {
+        padding: 20px 0;
+        display: block;
+        text-decoration: none;
+        color: #007dff;
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .huawei {
+        margin-bottom: 20px;
+    }
+
+    .zhong {
+        text-align: center;
+        margin-bottom: 122px;
+
+    }
+
+    .zhong a {
+        text-decoration: none;
+        color: #007dff;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .jjdb {
+        text-align: center;
+        color: #999999;
+        margin-bottom: 20px;
+    }
+
+    .anniu {
+        margin-left: 50px;
+    }
+
+    .fd {
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        font-size: 10px;
+        left: 100px;
+        color: #999999;
+    }
+
+    .fd a {
+        color: #267eff;
+    }
+
+    .wrg {
+        color: red;
+        font-size: 10px;
+        display: none;
+    }
+
+    .ewmyc {
+        display: block;
+        position: absolute;
+        width: 389px;
+        height: 272px;
+        top: 200px;
+        left: 50px;
+        display: none;
+        font-size: 14px;
+    }
+
+    .hgewm {
+        position: absolute;
+        left: 110px;
+    }
+
+    .ewmyc p {
+        position: absolute;
+        bottom: 20px;
+        left: 80px;
+    }
+
+    .ewmyc span {
+        position: absolute;
+        bottom: 0;
+        left: 25px;
+    }
+
+    .ewmyc b {
+        font-weight: 100;
+        color: #3b9bff;
+       
+    }
+    .ydpy {
+        position: absolute;
+        right: 0;
+        opacity: 0;
+    }
+
+    .aa {
+        transition: left 1s;
+        left: 50px
+    }
+    .bb {
+        transition: 2s;
+        opacity: 1;
+    }
+
+    .cc {
+        transition: 2s;
+        opacity: 0;
+    }
+    .dd {  transition: left 1s;
+        left: 110px}
+
+   
+ 
+</style>
+
+<body>
+
+    <div class="content">
+        <div class="ewmyc">
+            <img src="img/ewm1.jpg" class="hgewm">
+            <img src="img/py.jpg" class="ydpy">
+            <p>使用 <b> 华为移动服务app</b>扫一扫</p>
+            <span>若您使用华为手机,请进入"设置">"华为账号"扫码登录</span>
+        </div>
+        <div class="tuo"></div>
+        <div class="change">
+            <a href="#" class="userone" style="color:#a51b1b;">账号登录</a>
+            <span>|</span>
+            <a href="#" class="ewm">扫码登录</a>
+        </div>
+        <div class="zhuti">
+            <span class="wrg"><img src="img/qqj.png" alt=""> 华为帐号限制在4~15 个字符</span>
+            <input type="text" class="put" id="phnum" placeholder="手机号/邮件地址/华为号">
+            <input type="password" class="put" id="psw" placeholder="密码">
+            <a href="" class="fontone"><img src="img/213_03.jpg" alt=""> 短信验证码登录</a>
+            <button style="display:block" class="login">登录</button>
+            <div class="huawei"><input type="checkbox">记住华为账号<a href="" class="more">更多</a></div>
+            <div class="zhong"><a href="regist.html">注册账号</a>|<a href="">忘记密码?</a></div>
+            <div class="jjdb">-其他方式登录 -</div>
+            <a href="" class="anniu"><img src="img/qq.jpg" alt=""></a>
+            <a href="" class="anniu"><img src="img/zfb.jpg" alt=""></a>
+            <a href="" class="anniu"><img src="img/wx.jpg" alt=""></a>
+        </div>
+        <div class="fd">继续访问即代表您已同意<a href="">华为商城服务协议</a> 和<a href=""> 华为隐私政策</a> </div>
+    </div>
+
+</body>
+
+<script src="js/ajax.js"></script>
+<script src="jquery-1.8.3/jquery-1.8.3.js"></script>
+<script>
+    var drag = document.querySelector('.content')
+    var tuo = document.querySelector('.tuo')
+    window.onload = function () {
+        tuo.onmousedown = function (event) {
+            var event = event || window.event;
+            var diffX = event.clientX - drag.offsetLeft;
+            var diffY = event.clientY - drag.offsetTop;
+            if (typeof drag.setCapture !== 'undefined') {
+                drag.setCapture();
+            }
+            tuo.onmousemove = function (event) {
+                var event = event || window.event;
+                var moveX = event.clientX - diffX;
+                var moveY = event.clientY - diffY;
+                if (moveX < 0) {
+                    moveX = 0
+                } else if (moveX > window.innerWidth - drag.offsetWidth) {
+                    moveX = window.innerWidth - drag.offsetWidth
+                }
+                if (moveY < 0) {
+                    moveY = 0
+                } else if (moveY > window.innerHeight - drag.offsetHeight) {
+                    moveY = window.innerHeight - drag.offsetHeight
+                }
+                drag.style.left = moveX + 'px';
+                drag.style.top = moveY + 'px'
+            }
+            tuo.onmouseup = function (event) {
+                this.onmousemove = null;
+                this.onmouseup = null;
+
+                if (typeof drag.releaseCapture != 'undefined') {
+                    drag.releaseCapture();
+                }
+            }
+        }
+
+    };
+    var login = document.querySelector('.login')
+    var psw = document.querySelector('#psw')
+    var phnum = document.querySelector('#phnum')
+    var username = phnum.value;
+    var userpass = psw.value;
+    var wrg = document.querySelector('.wrg')
+    var userone = document.querySelector('.userone')
+    var ewm = document.querySelector('.ewm');
+    var zhuti = document.querySelector('.zhuti')
+    var ewmyc = document.querySelector('.ewmyc')
+    var hgewm = document.querySelector('.hgewm')
+    var ydpy = document.querySelector('.ydpy')
+    login.onclick = function () {
+        if (phnum.value.length > 4||phnum.value.length<15) {
+        ajax({
+            url: 'data/login2.php',
+            type: 'get',
+            data: 'act=login&user=' + username + '&pass=' + userpass,
+            success: function (data) {
+                var json = JSON.parse(data);
+                alert(json.msg);
+            },
+            failed: function (code) {
+                alert('错误' + code);
+            }
+        })}
+
+    };
+    phnum.onblur = function () {
+        if (phnum.value.length < 4||phnum.value.length>15) {
+            wrg.style.cssText = 'display:block;'
+            phnum.style.cssText = 'border-bottom:1px solid red'
+        } else {
+            wrg.style.cssText = 'display:none;'
+            phnum.style.cssText = 'border-bottom:1px solid black'
+        }
+    };
+    userone.onclick = function () {
+        zhuti.style.cssText = 'display:block;'
+        userone.style.cssText = 'color:#a51b1b;'
+        ewm.style.cssText = 'color:black;'
+        ewmyc.style.cssText = 'display:none;'
+    }
+    ewm.onclick = function () {
+        zhuti.style.cssText = 'display:none;'
+        ewm.style.cssText = 'color:#a51b1b;'
+        userone.style.cssText = 'color:black;'
+        ewmyc.style.cssText = 'display:block;'
+    };
+    $('.hgewm').mousemove(function () {
+        $(this).addClass('aa')
+        $('.ydpy').addClass('bb')
+        $('.ydpy').removeClass('cc')
+        $(this).removeClass('dd')
+    })
+    $('.hgewm').mouseleave(function () {
+        $(this).removeClass('aa')
+        $('.ydpy').removeClass('bb')
+        $('.ydpy').addClass('cc')
+        $(this).addClass('dd')
+    })
+
+</script>
+
+</html>
